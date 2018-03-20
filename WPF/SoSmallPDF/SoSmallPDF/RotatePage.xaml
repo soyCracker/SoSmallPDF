@@ -1,0 +1,31 @@
+﻿<Page x:Class="SoSmallPDF.RotatePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SoSmallPDF"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RotatePage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Button Name="SelectFileButton" Content="select file 選擇檔案" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Grid.Row="0" Grid.Column="1" Click="SelectFileButton_Click"/>
+        <Button Name="StartButton" Content="start 開始" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2" Width="75px" Click="StartButton_Click"/>
+        <TextBlock Name="SelectFileTextBlock"  Text="" TextWrapping="NoWrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="0" Grid.Column="0"/>
+        <TextBlock Name="MessageTextBlock" TextWrapping="Wrap" Text="請選擇旋轉角度：" HorizontalAlignment="Right" VerticalAlignment="Center" Width="150px" Grid.Row="1" Grid.Column="0"/>
+        <ComboBox Name="DegreeComboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200px" Grid.Row="1" Grid.Column="1">
+            <ComboBoxItem Name="right" Content="右轉90度"/>
+            <ComboBoxItem Name="half" Content="轉180度"/>
+            <ComboBoxItem Name="left" Content="左轉90度" />
+        </ComboBox>
+    </Grid>
+</Page>
