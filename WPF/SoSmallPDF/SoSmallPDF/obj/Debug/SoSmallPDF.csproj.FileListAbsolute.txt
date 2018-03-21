@@ -100,3 +100,31 @@ C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSma
 C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csproj.CoreCompileInputs.cache
 C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.exe
 C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.pdb
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\SoSmallPDF.exe.config
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\SoSmallPDF.exe
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\SoSmallPDF.pdb
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\itextsharp.dll
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\itextsharp.xml
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csprojResolveAssemblyReference.cache
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\AboutPage.g.cs
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MainPage.g.cs
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MainWindow.g.cs
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MergePage.g.cs
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\RotatePage.g.cs
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SplitPage.g.cs
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\App.g.cs
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF_MarkupCompile.cache
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF_MarkupCompile.lref
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\AboutPage.baml
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MainPage.baml
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MainWindow.baml
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MergePage.baml
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\RotatePage.baml
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SplitPage.baml
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.g.resources
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.Properties.Resources.resources
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csproj.GenerateResource.cache
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csproj.CoreCompileInputs.cache
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csproj.CopyComplete
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.exe
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.pdb

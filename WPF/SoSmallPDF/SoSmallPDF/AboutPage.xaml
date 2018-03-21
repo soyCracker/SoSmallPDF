@@ -25,7 +25,8 @@
         <Button Name="UpdateUrlButton" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="1" Grid.Column="0" Click="UpdateUrlButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
             <TextBlock Text="https://github.com/soyCracker/SoSmallPDF/releases" TextWrapping="Wrap" FontSize="15px" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         </Button>
-        <Image Name="MyIcon" Source="Image/暉.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150px" Width="150px" Grid.Column="1" Grid.RowSpan="2"/>
+        <Image Source="Image/SoSmallPDF.ico" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100px" Width="100px" Grid.Column="1" Grid.Row="0"/>
+        <Image Source="Image/暉.png" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150px" Width="150px" Grid.Column="1" Grid.Row="1"/>
         
     </Grid>
 </Page>

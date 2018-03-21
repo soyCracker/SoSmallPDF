@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SoSmallPDF"
         mc:Ignorable="d"
-        Title="SoSmallPDF editer" Height="450" Width="700"
+        Title="SoSmallPDF editor" Height="450" Width="700"
         WindowStyle="None"
         MouseLeftButtonDown="DragWindow">
     <Grid>
         <Frame x:Name="NavigationFrame" NavigationUIVisibility="Hidden"/>
-        <Button Name="ReturnButton" Content="主頁" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75px" Click="ReturnButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="AboutButton" Content="關於與更新" HorizontalAlignment="left" VerticalAlignment="Top" Margin="75px,0,0,0" Width="75px" Click="AboutButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="ReturnButton" Content="主頁" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40px,0,0,0" Width="75px" Click="ReturnButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="AboutButton" Content="關於與更新" HorizontalAlignment="left" VerticalAlignment="Top" Margin="115px,0,0,0" Width="75px" Click="AboutButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         <Button Name="CloseButton" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="25px" Height="25px" Click="CloseButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Image Source="Image/SoSmallPDF.ico" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40px" Width="40px"/>
     </Grid>
 </Window>
