@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("sosmallpdf.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/%e6%9a%89.png")]
 
 

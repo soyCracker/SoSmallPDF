@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SoSmallPDF"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="450" d:DesignWidth="700"
       Title="MainPage">
 
     <Grid>
@@ -14,9 +14,9 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Name="splitButton" Content="分割split" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75px" Height="75px" Grid.Column="0" Click="splitButton_Click"/>
-        <Button Name="mergeButton" Content="合併merge" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75px" Height="75px" Grid.Column="1" Click="mergeButton_Click"/>
-        <Button Name="rotateButton" Content="旋轉rotate" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75px" Height="75px" Grid.Column="2" Click="rotateButton_Click"/>
+        <Button Name="splitButton" Content="分割split" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Height="75px" Grid.Column="0" Click="splitButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="mergeButton" Content="合併merge" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Height="75px" Grid.Column="1" Click="mergeButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="rotateButton" Content="旋轉rotate" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Height="75px" Grid.Column="2" Click="rotateButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
 
     </Grid>
 </Page>

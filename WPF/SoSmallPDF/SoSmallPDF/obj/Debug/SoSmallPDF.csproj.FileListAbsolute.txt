@@ -73,3 +73,30 @@ D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debu
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csproj.CopyComplete
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.exe
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.pdb
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csprojResolveAssemblyReference.cache
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\AboutPage.g.cs
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MainPage.g.cs
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MainWindow.g.cs
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MergePage.g.cs
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\RotatePage.g.cs
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SplitPage.g.cs
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\App.g.cs
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF_MarkupCompile.cache
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF_MarkupCompile.lref
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\SoSmallPDF.exe.config
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\SoSmallPDF.exe
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\SoSmallPDF.pdb
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\itextsharp.dll
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\bin\Debug\itextsharp.xml
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\AboutPage.baml
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MainPage.baml
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MainWindow.baml
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\MergePage.baml
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\RotatePage.baml
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SplitPage.baml
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.g.resources
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.Properties.Resources.resources
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csproj.GenerateResource.Cache
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csproj.CoreCompileInputs.cache
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.exe
+C:\Users\puron\source\repos\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.pdb

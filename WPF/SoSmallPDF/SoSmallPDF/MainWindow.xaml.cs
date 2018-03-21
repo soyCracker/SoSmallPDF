@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using System.Windows.Input;
 
 namespace SoSmallPDF
 {
@@ -18,22 +19,19 @@ namespace SoSmallPDF
             NavigationFrame.Navigate(new MainPage());
         }
 
-        /*private void splitButton_Click(object sender, RoutedEventArgs e)
+        private void AboutButton_Click(object sender, RoutedEventArgs e)
         {
-            SplitWindow splitWindow = new SplitWindow();
-            splitWindow.Show();
-            this.Close();
-            
-        }*/
-
-        /*private void mergeButton_Click(object sender, RoutedEventArgs e)
-        {
-
+            NavigationFrame.Navigate(new AboutPage());
         }
 
-        private void rotateButton_Click(object sender, RoutedEventArgs e)
+        public void DragWindow(object sender, MouseButtonEventArgs args)
         {
+            this.DragMove();
+        }
 
-        }*/
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
