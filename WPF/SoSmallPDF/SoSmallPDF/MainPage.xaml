@@ -14,9 +14,9 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Button Name="splitButton" Content="分割split" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Height="75px" Grid.Column="0" Click="splitButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="mergeButton" Content="合併merge" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Height="75px" Grid.Column="1" Click="mergeButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="rotateButton" Content="旋轉rotate" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Height="75px" Grid.Column="2" Click="rotateButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="splitButton" Content="分割split" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Height="75px" Grid.Column="0" Click="splitButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="mergeButton" Content="合併merge" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Height="75px" Grid.Column="1" Click="mergeButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="rotateButton" Content="旋轉rotate" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="120px" Height="75px" Grid.Column="2" Click="rotateButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
 
     </Grid>
 </Page>

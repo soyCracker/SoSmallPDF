@@ -11,7 +11,7 @@ namespace SoSmallPDF
     /// </summary>
     public partial class MergePage : Page
     {
-        string inputPdf1, inputPdf2;
+        string[] inputPdf = new string[5];
         SelectFileClass sfc = new SelectFileClass();
 
         public MergePage()
@@ -19,47 +19,74 @@ namespace SoSmallPDF
             InitializeComponent();
         }
 
-        private void SelectFileButton1_Click(object sender, RoutedEventArgs e)
-        {
-            inputPdf1 = sfc.selectFile();
-            SelectFileTextBlock1.Text = inputPdf1;
-        }
-
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrEmpty(inputPdf1)&& !string.IsNullOrEmpty(inputPdf2))
+            int fileCount = 0;
+            for(int i=0;i<5;i++)
+            {
+                if (!string.IsNullOrEmpty(inputPdf[i]))
+                {
+                    fileCount++;
+                }
+            }
+            if(fileCount>1)
             {
                 string outputPdf = sfc.saveFile();
-                if (!string.IsNullOrEmpty(outputPdf))
-                {
-                    mergeTwoPdf(inputPdf1, inputPdf2, outputPdf);
-                }
-                MessageTextBlock.Text = "請選擇2個檔案：";
+                mergeTwoPdf(inputPdf, outputPdf);
+                MessageTextBlock.Text = "按順序選擇檔案，最多5個：";
             }
             else
             {
-                MessageTextBlock.Text = "你沒選擇檔案！！！！！！！";
+                MessageTextBlock.Text = "至少選擇2個檔案！！！！！！！";
             }
+        }
+
+        public void mergeTwoPdf(string[] inputPdf, string outputPdf)
+        {
+            Document document = new Document();
+            PdfCopy copy = new PdfCopy(document, new FileStream(outputPdf, FileMode.Create));
+            document.Open();
+            for(int i=0;i<5;i++)
+            {
+                if(!string.IsNullOrEmpty(inputPdf[i]))
+                {
+                    PdfReader reader = new PdfReader(inputPdf[i]);
+                    copy.AddDocument(reader);
+                    reader.Close();
+                }
+            }
+            copy.Close();
+            document.Close();
+        }
+
+        private void SelectFileButton1_Click(object sender, RoutedEventArgs e)
+        {
+            inputPdf[0] = sfc.selectFile();
+            SelectFileTextBlock1.Text = inputPdf[0];
         }
 
         private void SelectFileButton2_Click(object sender, RoutedEventArgs e)
         {
-            inputPdf2 = sfc.selectFile();
-            SelectFileTextBlock2.Text = inputPdf2;
+            inputPdf[1] = sfc.selectFile();
+            SelectFileTextBlock2.Text = inputPdf[1];
         }
 
-        public void mergeTwoPdf(string inputPdf1, string inputPdf2, string outputPdf)
+        private void SelectFileButton3_Click(object sender, RoutedEventArgs e)
         {
-            PdfReader reader1 = new PdfReader(inputPdf1);
-            PdfReader reader2 = new PdfReader(inputPdf2);
-            Document document = new Document();
-            PdfCopy copy = new PdfCopy(document, new FileStream(outputPdf, FileMode.Create));
-            document.Open();
-            copy.AddDocument(reader1);
-            copy.AddDocument(reader2);
-            document.Close();
-            reader1.Close();
-            reader2.Close();
+            inputPdf[2] = sfc.selectFile();
+            SelectFileTextBlock3.Text = inputPdf[2];
+        }
+
+        private void SelectFileButton4_Click(object sender, RoutedEventArgs e)
+        {
+            inputPdf[3] = sfc.selectFile();
+            SelectFileTextBlock4.Text = inputPdf[3];
+        }
+
+        private void SelectFileButton5_Click(object sender, RoutedEventArgs e)
+        {
+            inputPdf[4] = sfc.selectFile();
+            SelectFileTextBlock5.Text = inputPdf[4];
         }
     }
 }

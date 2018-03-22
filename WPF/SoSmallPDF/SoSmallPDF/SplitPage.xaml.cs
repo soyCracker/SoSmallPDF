@@ -17,6 +17,7 @@ namespace SoSmallPDF
         public SplitPage()
         {
             InitializeComponent();
+            MessageTextBlock.Text = "2. 請輸入要保留的頁碼\n比如：1,4-6,9";
         }
 
         private void SelectFileButton_Click(object sender, RoutedEventArgs e)
@@ -45,7 +46,7 @@ namespace SoSmallPDF
                     {
                         SelectPages(inputPdf, SelectPageTextBox.Text, outputPdf);
                     }
-                    MessageTextBlock.Text = "請輸入要保留的頁碼";
+                    MessageTextBlock.Text = "2. 請輸入要保留的頁碼\n比如：1,4-6,9";
                 }
                 else
                 {

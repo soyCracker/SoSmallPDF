@@ -22,7 +22,7 @@
         <TextBlock Text="包含醫院辦公最常用的三種pdf編輯功能：分割、合併、旋轉" TextWrapping="Wrap" FontSize="20px" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10px,0,0,0" Width="300px" Grid.Row="0" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         <TextBlock Text="更新地址" TextWrapping="Wrap" FontSize="20px" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20px,0,0" Grid.Row="1" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         <TextBlock Text="資訊室 役男 育暉" TextWrapping="Wrap" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="UpdateUrlButton" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="1" Grid.Column="0" Click="UpdateUrlButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}">
+        <Button Name="UpdateUrlButton" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="1" Grid.Column="0" Click="UpdateUrlButton_Click" Background="#ffede9">
             <TextBlock Text="https://github.com/soyCracker/SoSmallPDF/releases" TextWrapping="Wrap" FontSize="15px" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         </Button>
         <Image Source="Image/SoSmallPDF.ico" HorizontalAlignment="Center" VerticalAlignment="Center" Height="100px" Width="100px" Grid.Column="1" Grid.Row="0"/>
