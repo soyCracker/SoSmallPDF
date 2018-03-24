@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/%e6%9a%89.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("gsdll32.dll")]
 
 

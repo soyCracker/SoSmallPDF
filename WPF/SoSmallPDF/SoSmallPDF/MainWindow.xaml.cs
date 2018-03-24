@@ -24,11 +24,13 @@ namespace SoSmallPDF
             NavigationFrame.Navigate(new AboutPage());
         }
 
+        //拖曳視窗
         public void DragWindow(object sender, MouseButtonEventArgs args)
         {
             this.DragMove();
         }
 
+        //為了實現無邊框視窗必須另外建一個關閉按鈕來關閉程式
         private void CloseButton_Click(object sender, RoutedEventArgs e)
         {
             this.Close();

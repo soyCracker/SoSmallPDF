@@ -19,13 +19,15 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Button Name="SelectFileButton" Content="1. select file 選擇檔案" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" Grid.Row="0" Grid.Column="1" Click="SelectFileButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="StartButton" Content="3. start 開始" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2" Width="150px" Click="StartButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <TextBlock Name="SelectFileTextBlock"  Text="" FontSize="16px" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="0" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <TextBlock Name="MessageTextBlock" TextWrapping="Wrap" FontSize="16px" Text="2. 請選擇旋轉角度：" HorizontalAlignment="Right" VerticalAlignment="Center" Width="150px" Grid.Row="1" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <ComboBox Name="DegreeComboBox" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200px" Grid.Row="1" Grid.Column="1">
+        <Button Name="StartButton" Content="3. 各別旋轉" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0"  Width="150px" Click="StartButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="AllRotateButton" Content="3. 全部旋轉" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"  Width="150px" Click="AllRotateButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <TextBlock Name="SelectFileTextBlock"  Text="" FontSize="16px" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20px" Width="300px" Grid.Row="0" Grid.Column="1" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <TextBlock Name="MessageTextBlock" TextWrapping="Wrap" FontSize="16px" Text="2. 請選擇旋轉角度：" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150px" Grid.Row="1" Grid.Column="1" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <ComboBox Name="DegreeComboBox" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" Grid.Row="1" Grid.Column="1">
             <ComboBoxItem Name="right" Content="右轉90度" FontSize="18px" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
             <ComboBoxItem Name="half" Content="轉180度" FontSize="18px" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
             <ComboBoxItem Name="left" Content="左轉90度" FontSize="18px" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         </ComboBox>
+        <ListBox Name="PageListBox" HorizontalAlignment="Left" Height="311" Margin="36,35,0,0" VerticalAlignment="Top" Width="260" Grid.RowSpan="3"/>
     </Grid>
 </Page>

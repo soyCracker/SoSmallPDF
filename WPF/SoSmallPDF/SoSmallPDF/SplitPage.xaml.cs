@@ -24,8 +24,10 @@ namespace SoSmallPDF
         {
             inputPdf = sfc.selectFile();
             SelectFileTextBlock.Text = inputPdf;
+            MessageTextBlock.Text = "2. 請輸入要保留的頁碼\n比如：1,4-6,9";
         }
 
+        //留下所選擇的頁碼，以達到分割的效果
         public void SelectPages(string inputPdf, string pageSelection, string outputPdf)
         {
             PdfReader reader = new PdfReader(inputPdf);
@@ -37,16 +39,18 @@ namespace SoSmallPDF
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
+            //檢查是否有選擇檔案
             if(!string.IsNullOrEmpty(inputPdf))
             {
-                if (!String.IsNullOrEmpty(SelectPageTextBox.Text))
+                //檢查是否有輸入頁碼
+                if (!string.IsNullOrEmpty(SelectPageTextBox.Text))
                 {
                     string outputPdf = sfc.saveFile();
                     if(!string.IsNullOrEmpty(outputPdf))
                     {
                         SelectPages(inputPdf, SelectPageTextBox.Text, outputPdf);
                     }
-                    MessageTextBlock.Text = "2. 請輸入要保留的頁碼\n比如：1,4-6,9";
+                    MessageTextBlock.Text = "完成！";
                 }
                 else
                 {

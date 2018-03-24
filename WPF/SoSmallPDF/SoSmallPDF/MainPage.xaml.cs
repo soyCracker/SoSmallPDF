@@ -16,16 +16,19 @@ namespace SoSmallPDF
 
         private void splitButton_Click(object sender, RoutedEventArgs e)
         {
+            //切換頁面
             this.NavigationService.Navigate(new Uri("SplitPage.xaml", UriKind.Relative));
         }
 
         private void mergeButton_Click(object sender, RoutedEventArgs e)
         {
+            //切換頁面
             this.NavigationService.Navigate(new Uri("MergePage.xaml", UriKind.Relative));
         }
 
         private void rotateButton_Click(object sender, RoutedEventArgs e)
         {
+            //切換頁面
             this.NavigationService.Navigate(new Uri("RotatePage.xaml", UriKind.Relative));
         }
     }
