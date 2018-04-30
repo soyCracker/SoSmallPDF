@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using System.IO;
 
 namespace SoSmallPDF
 {
@@ -29,13 +30,7 @@ namespace SoSmallPDF
             if (fileDialog.ShowDialog() == true)
             {
                 //去掉檔名，檔案選擇器記錄這一次位置
-                string[] filePathTemp = fileDialog.FileName.Split('\\');
-                restoreDirectory = "";
-                for (int i=0;i<filePathTemp.Length-1;i++)
-                {
-                    restoreDirectory += filePathTemp[i] + '\\';
-                }
-
+                restoreDirectory = Path.GetDirectoryName(fileDialog.FileName);
                 selectFileName = fileDialog.FileName;
                 return fileDialog.FileName;
             }
@@ -50,14 +45,8 @@ namespace SoSmallPDF
         {
             SaveFileDialog fileDialog = new SaveFileDialog();
             //預設存檔名為：原檔名+SS
-            string[] filePathTemp = selectFileName.Split('\\');
-            string[] fileNameTemp = filePathTemp[filePathTemp.Length - 1].Split('.');
-            string oFileName = "";
-            for(int i=0;i<fileNameTemp.Length-1;i++)
-            {
-                oFileName += fileNameTemp[i];
-            }
-            fileDialog.FileName = oFileName + "SS";
+            fileDialog.FileName = Path.GetFileNameWithoutExtension(selectFileName) + "SS";
+            //fileDialog.FileName = original FileName + "SS";
             //default file extension
             fileDialog.DefaultExt = ".pdf";
             //filter files by extension

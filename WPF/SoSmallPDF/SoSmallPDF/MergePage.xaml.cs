@@ -11,7 +11,7 @@ namespace SoSmallPDF
     /// </summary>
     public partial class MergePage : Page
     {
-        string[] inputPdf = new string[5];
+        string inputPdf;
         SelectFileClass sfc = new SelectFileClass();
 
         public MergePage()
@@ -21,36 +21,18 @@ namespace SoSmallPDF
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            int fileCount = 0;
-            //計算選擇了幾個檔案
-            for(int i=0;i<5;i++)
+            string outputPdf = sfc.saveFile();
+            string[] pdfList = new string[PdfListBox.Items.Count];
+            for(int i=0;i< PdfListBox.Items.Count;i++)
             {
-                if (!string.IsNullOrEmpty(inputPdf[i]))
-                {
-                    fileCount++;
-                }
+                StackPanel stack = (StackPanel)PdfListBox.Items[i];
+                TextBlock text = (TextBlock)stack.Children[0];
+                pdfList[i] = text.Text;
             }
-            //至少要選擇2個檔案
-            if(fileCount>1)
-            {
-                string outputPdf = sfc.saveFile();
-                mergeTwoPdf(inputPdf, outputPdf);
-                MessageTextBlock.Text = "完成！";
-                //清空
-                for(int i=0;i<inputPdf.Length;i++)
-                {
-                    inputPdf[i] = "";
-                }
-                SelectFileTextBlock1.Text = "";
-                SelectFileTextBlock2.Text = "";
-                SelectFileTextBlock3.Text = "";
-                SelectFileTextBlock4.Text = "";
-                SelectFileTextBlock5.Text = "";
-            }
-            else
-            {
-                MessageTextBlock.Text = "至少選擇2個檔案！！！！！！！";
-            }
+            mergeTwoPdf(pdfList, outputPdf);
+            MessageTextBlock.Text = "完成！";
+            inputPdf = "";
+            PdfListBox.Items.Clear();
         }
 
         //合併PDF
@@ -59,11 +41,11 @@ namespace SoSmallPDF
             Document document = new Document();
             PdfCopy copy = new PdfCopy(document, new FileStream(outputPdf, FileMode.Create));
             document.Open();
-            for(int i=0;i<5;i++)
+            foreach(string p in inputPdf)
             {
-                if(!string.IsNullOrEmpty(inputPdf[i]))
+                if (!string.IsNullOrEmpty(p))
                 {
-                    PdfReader reader = new PdfReader(inputPdf[i]);
+                    PdfReader reader = new PdfReader(p);
                     copy.AddDocument(reader);
                     reader.Close();
                 }
@@ -72,39 +54,79 @@ namespace SoSmallPDF
             document.Close();
         }
 
-        private void SelectFileButton1_Click(object sender, RoutedEventArgs e)
+        private void SelectFileButton_Click(object sender, RoutedEventArgs e)
         {
-            inputPdf[0] = sfc.selectFile();
-            SelectFileTextBlock1.Text = inputPdf[0];
-            MessageTextBlock.Text = "按順序選擇檔案，最多5個：";
+            inputPdf = sfc.selectFile();
+            MessageTextBlock.Text = "可拖曳檔案至上方框，按順序選擇檔案:";
+            setupPdfListBox(inputPdf);
         }
 
-        private void SelectFileButton2_Click(object sender, RoutedEventArgs e)
+        //移除list中的pdf
+        private void RemoveFileButton_Click(object sender, RoutedEventArgs e)
         {
-            inputPdf[1] = sfc.selectFile();
-            SelectFileTextBlock2.Text = inputPdf[1];
-            MessageTextBlock.Text = "按順序選擇檔案，最多5個：";
+            PdfListBox.Items.Remove(PdfListBox.SelectedItem);
         }
 
-        private void SelectFileButton3_Click(object sender, RoutedEventArgs e)
+        //上移pdf
+        private void UpFileButton_Click(object sender, RoutedEventArgs e)
         {
-            inputPdf[2] = sfc.selectFile();
-            SelectFileTextBlock3.Text = inputPdf[2];
-            MessageTextBlock.Text = "按順序選擇檔案，最多5個：";
+            if(PdfListBox.SelectedIndex>0)
+            {
+                var temp = PdfListBox.SelectedItem;
+                int tempIndex = PdfListBox.SelectedIndex;
+                PdfListBox.Items.RemoveAt(tempIndex);
+                PdfListBox.Items.Insert(tempIndex - 1, temp);
+                PdfListBox.SelectedIndex = tempIndex - 1;
+            }
         }
 
-        private void SelectFileButton4_Click(object sender, RoutedEventArgs e)
+        //下移pdf
+        private void DownFileButton_Click(object sender, RoutedEventArgs e)
         {
-            inputPdf[3] = sfc.selectFile();
-            SelectFileTextBlock4.Text = inputPdf[3];
-            MessageTextBlock.Text = "按順序選擇檔案，最多5個：";
+            if (0 <= PdfListBox.SelectedIndex && PdfListBox.SelectedIndex + 1 < PdfListBox.Items.Count)
+            {
+                var temp = PdfListBox.SelectedItem;
+                int tempIndex = PdfListBox.SelectedIndex;
+                PdfListBox.Items.RemoveAt(tempIndex);
+                PdfListBox.Items.Insert(tempIndex + 1, temp);
+                PdfListBox.SelectedIndex = tempIndex + 1;
+            }
         }
 
-        private void SelectFileButton5_Click(object sender, RoutedEventArgs e)
+        public void setupPdfListBox(string inputPdf)
         {
-            inputPdf[4] = sfc.selectFile();
-            SelectFileTextBlock5.Text = inputPdf[4];
-            MessageTextBlock.Text = "按順序選擇檔案，最多5個：";
+            StackPanel stk = new StackPanel();
+            stk.Name = "stack";
+            stk.Orientation = Orientation.Horizontal;
+            stk.HorizontalAlignment = HorizontalAlignment.Center;
+
+            TextBlock text = new TextBlock();
+            text.Name = "text";
+            text.Text = inputPdf;
+            text.FontSize = 12;
+            text.VerticalAlignment = VerticalAlignment.Center;
+
+            stk.Children.Add(text);
+            PdfListBox.Items.Add(stk);
+        }
+
+        //拖曳檔案進listbox
+        private void PdfListBox_Drop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop, false) == true)
+            {
+                string[] temp = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+                inputPdf = temp[0];
+                MessageTextBlock.Text = "可拖曳檔案至上方框，按順序選擇檔案:";
+                if(Path.GetExtension(inputPdf).ToLower()==".pdf")
+                {
+                    setupPdfListBox(inputPdf);
+                }
+                else
+                {
+                    MessageTextBlock.Text = "這不是PDF";
+                }
+            }
         }
     }
 }

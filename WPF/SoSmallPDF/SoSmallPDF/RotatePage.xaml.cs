@@ -30,7 +30,7 @@ namespace SoSmallPDF
                 setupListBox(reader.NumberOfPages);
                 reader.Close();
             }
-            MessageTextBlock.Text = "請選擇旋轉角度：";
+            MessageTextBlock.Text = "可拖曳檔案請選擇旋轉角度：";
         }
 
         private void StartButton_Click(object sender, RoutedEventArgs e)
@@ -149,6 +149,25 @@ namespace SoSmallPDF
                 stk.Children.Add(comboBox);  // index 1  
                 //Add to the listbox  
                 PageListBox.Items.Add(stk);
+            }
+        }
+
+        private void PageListBox_Drop(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop, false) == true)
+            {
+                string[] temp = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+                inputPdf = temp[0];
+                MessageTextBlock.Text = "可拖曳檔案至上方框，按順序選擇檔案:";
+                if (Path.GetExtension(inputPdf).ToLower() == ".pdf")
+                {
+                    PdfReader reader = new PdfReader(inputPdf);
+                    setupListBox(reader.NumberOfPages);
+                }
+                else
+                {
+                    MessageTextBlock.Text = "這不是PDF";
+                }
             }
         }
     }

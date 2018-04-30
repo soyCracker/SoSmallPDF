@@ -21,7 +21,7 @@
         <Button Name="SelectFileButton" Content="1. select file 選擇檔案" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" Grid.Row="0" Grid.Column="1" Click="SelectFileButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         <TextBox Name="SelectPageTextBox" TextWrapping="Wrap" Text="" FontSize="18px" HorizontalAlignment="Left" VerticalAlignment="Center" Width="200px" Grid.Row="1" Grid.Column="1" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         <Button Name="StartButton" Content="3. start 開始" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2" Width="120px" Click="StartButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <TextBlock Name="SelectFileTextBlock"  Text="" FontSize="16px" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="0" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <TextBlock Name="SelectFileTextBlock"  Text=" + 可以拖曳檔案至此" FontSize="16px" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Height="50" Grid.Row="0" Grid.Column="0" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold" AllowDrop="True" Drop="SelectFileTextBlock_Drop"/>
         <TextBlock Name="MessageTextBlock" TextWrapping="Wrap" FontSize="16px" Text="" HorizontalAlignment="Right" VerticalAlignment="Center" Width="200px" Grid.Row="1" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
     </Grid>
 </Page>

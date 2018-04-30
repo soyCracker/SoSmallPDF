@@ -14,6 +14,6 @@
         <Button Name="AboutButton" Content="關於與更新" HorizontalAlignment="left" VerticalAlignment="Top" Margin="115px,0,0,0" Width="75px" Click="AboutButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         <Button Name="CloseButton" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Width="25px" Height="25px" Click="CloseButton_Click" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
         <Image Source="Image/SoSmallPDF.ico" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40px" Width="40px"/>
-        <TextBlock Text="version 1.2.0" Margin="200px,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bradley Hand ITC"/>
+        <TextBlock Text="version 1.3.0" Margin="200px,0,0,0" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bradley Hand ITC"/>
     </Grid>
 </Window>

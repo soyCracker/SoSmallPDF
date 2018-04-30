@@ -18,20 +18,27 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
-        <Button Name="SelectFileButton1" Content="1. select file 選擇檔案" FontSize="18px" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" Grid.Row="0" Grid.Column="1" Click="SelectFileButton1_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <TextBlock Name="SelectFileTextBlock1" FontSize="16px" Text="" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="0" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="SelectFileButton2" FontSize="18px" Content="2. select file 選擇檔案" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" Grid.Row="1" Grid.Column="1" Click="SelectFileButton2_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <TextBlock Name="SelectFileTextBlock2" FontSize="16px" Text="" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="1" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="SelectFileButton3" FontSize="18px" Content="3. select file 選擇檔案" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" Grid.Row="2" Grid.Column="1" Click="SelectFileButton3_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <TextBlock Name="SelectFileTextBlock3" FontSize="16px" Text="" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="2" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="SelectFileButton4" FontSize="18px" Content="4. select file 選擇檔案" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" Grid.Row="3" Grid.Column="1" Click="SelectFileButton4_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <TextBlock Name="SelectFileTextBlock4" FontSize="16px" Text="" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="3" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="SelectFileButton5" FontSize="18px" Content="5. select file 選擇檔案" HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" Grid.Row="4" Grid.Column="1" Click="SelectFileButton5_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <TextBlock Name="SelectFileTextBlock5" FontSize="16px" Text="" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="300px" Grid.Row="4" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <Button Name="StartButton" Content="6. start 開始" FontSize="18px" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Width="120px" Click="StartButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
-        <TextBlock Name="MessageTextBlock" TextWrapping="Wrap" FontSize="16px" Text="按順序選擇檔案，最多5個:" Width="200px" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="5" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold" TextAlignment="Center"/>
+        <Button Name="SelectFileButton" Content="select file 選擇檔案" FontSize="18px" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" 
+                Grid.Row="0" Grid.Column="1" Click="SelectFileButton_Click" Background="#ffede9" 
+                FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="RemoveFileButton" FontSize="18px" Content="remove file 移除檔案" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" 
+                Grid.Row="1" Grid.Column="1" Click="RemoveFileButton_Click" Background="#ffede9" 
+                FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="UpFileButton" FontSize="18px" Content="up file 上移檔案" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" 
+                Grid.Row="2" Grid.Column="1" Click="UpFileButton_Click" Background="#ffede9" 
+                FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="DownFileButton" FontSize="18px" Content="down file 下移檔案" 
+                HorizontalAlignment="Center" VerticalAlignment="Center" Width="200px" 
+                Grid.Row="3" Grid.Column="1" Click="DownFileButton_Click" Background="#ffede9" 
+                FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <Button Name="StartButton" Content="start 開始" FontSize="18px" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="5" Grid.Column="1" Width="120px" Click="StartButton_Click" Background="#ffede9" FontFamily="Bradley Hand ITC" FontWeight="Bold"/>
+        <TextBlock Name="MessageTextBlock" TextWrapping="Wrap" FontSize="16px" Text="可拖曳檔案至上方框，按順序選擇檔案:" Width="300px" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Row="5" Grid.Column="0" FontFamily="Bradley Hand ITC" FontWeight="Bold" TextAlignment="Center"/>
+        <ListBox Name="PdfListBox" HorizontalAlignment="Left" Height="311" Margin="36,35,0,0" VerticalAlignment="Top" Width="350" Grid.RowSpan="5" AllowDrop="True" Drop="PdfListBox_Drop"/>
     </Grid>
 </Page>
