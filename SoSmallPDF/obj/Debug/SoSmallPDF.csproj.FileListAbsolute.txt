@@ -52,7 +52,6 @@ D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\bin\Debu
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\bin\Debug\SoSmallPDF.pdb
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\bin\Debug\itextsharp.dll
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\bin\Debug\itextsharp.xml
-D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csprojResolveAssemblyReference.cache
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\MainPage.g.cs
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\MainWindow.g.cs
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\MergePage.g.cs
@@ -128,3 +127,6 @@ D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSm
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csproj.CopyComplete
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.exe
 D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\WPF\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.pdb
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\SoSmallPDF.csprojAssemblyReference.cache
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\AboutPage.g.cs
+D:\UserData\Documents\Visual Studio 2017\Projects\SoSmallPDF\SoSmallPDF\obj\Debug\AboutPage.baml
